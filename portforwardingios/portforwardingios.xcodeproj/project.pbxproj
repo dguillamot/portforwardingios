@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AE582220118A079BC6E7000 /* Pods_portforwardingios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86527CF95C17954EC42EEFC /* Pods_portforwardingios.framework */; };
+		C30058C51CFFF98200FBC9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30058C31CFFF98200FBC9AA /* Main.storyboard */; };
+		C30058C71CFFF98200FBC9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30058C61CFFF98200FBC9AA /* Assets.xcassets */; };
+		C30058CA1CFFF98200FBC9AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30058C81CFFF98200FBC9AA /* LaunchScreen.storyboard */; };
+		C30058D51CFFF98200FBC9AA /* portforwardingiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30058D41CFFF98200FBC9AA /* portforwardingiosTests.m */; };
+		C30058E01CFFF98200FBC9AA /* portforwardingiosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30058DF1CFFF98200FBC9AA /* portforwardingiosUITests.m */; };
+		C30058EF1CFFFA4700FBC9AA /* PFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C30058EE1CFFFA4700FBC9AA /* PFAppDelegate.m */; };
+		C30058FB1CFFFA8800FBC9AA /* FBPortForwardingServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C30058F91CFFFA8800FBC9AA /* FBPortForwardingServer.m */; };
+		C32F648E1CFFFF050055D4F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F648D1CFFFF050055D4F3 /* main.m */; };
+		C32F64901CFFFF290055D4F3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C32F648F1CFFFF290055D4F3 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30058D11CFFF98200FBC9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30058AC1CFFF98200FBC9AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30058B31CFFF98200FBC9AA;
+			remoteInfo = portforwardingios;
+		};
+		C30058DC1CFFF98200FBC9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30058AC1CFFF98200FBC9AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30058B31CFFF98200FBC9AA;
+			remoteInfo = portforwardingios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		602D1CFF5E78864AD0A422E4 /* Pods-portforwardingios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portforwardingios.release.xcconfig"; path = "Pods/Target Support Files/Pods-portforwardingios/Pods-portforwardingios.release.xcconfig"; sourceTree = "<group>"; };
+		91C392631F14A026C36CCEEC /* Pods-portforwardingios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portforwardingios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-portforwardingios/Pods-portforwardingios.debug.xcconfig"; sourceTree = "<group>"; };
+		C30058B41CFFF98200FBC9AA /* portforwardingios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portforwardingios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30058C41CFFF98200FBC9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C30058C61CFFF98200FBC9AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30058C91CFFF98200FBC9AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C30058D01CFFF98200FBC9AA /* portforwardingiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portforwardingiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30058D41CFFF98200FBC9AA /* portforwardingiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = portforwardingiosTests.m; sourceTree = "<group>"; };
+		C30058D61CFFF98200FBC9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30058DB1CFFF98200FBC9AA /* portforwardingiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portforwardingiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30058DF1CFFF98200FBC9AA /* portforwardingiosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = portforwardingiosUITests.m; sourceTree = "<group>"; };
+		C30058E11CFFF98200FBC9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30058ED1CFFFA4700FBC9AA /* PFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAppDelegate.h; sourceTree = "<group>"; };
+		C30058EE1CFFFA4700FBC9AA /* PFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAppDelegate.m; sourceTree = "<group>"; };
+		C30058F71CFFFA8800FBC9AA /* FBPortForwardingCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPortForwardingCommon.h; sourceTree = "<group>"; };
+		C30058F81CFFFA8800FBC9AA /* FBPortForwardingServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPortForwardingServer.h; sourceTree = "<group>"; };
+		C30058F91CFFFA8800FBC9AA /* FBPortForwardingServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPortForwardingServer.m; sourceTree = "<group>"; };
+		C32F648D1CFFFF050055D4F3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C32F648F1CFFFF290055D4F3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86527CF95C17954EC42EEFC /* Pods_portforwardingios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_portforwardingios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30058B11CFFF98200FBC9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE582220118A079BC6E7000 /* Pods_portforwardingios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30058CD1CFFF98200FBC9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30058D81CFFF98200FBC9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4F79228FB5CD483D2BCCF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91C392631F14A026C36CCEEC /* Pods-portforwardingios.debug.xcconfig */,
+				602D1CFF5E78864AD0A422E4 /* Pods-portforwardingios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62654379E04DA9C0CB06B704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86527CF95C17954EC42EEFC /* Pods_portforwardingios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30058AB1CFFF98200FBC9AA = {
+			isa = PBXGroup;
+			children = (
+				C30058B61CFFF98200FBC9AA /* portforwardingios */,
+				C30058D31CFFF98200FBC9AA /* portforwardingiosTests */,
+				C30058DE1CFFF98200FBC9AA /* portforwardingiosUITests */,
+				C30058B51CFFF98200FBC9AA /* Products */,
+				1A4F79228FB5CD483D2BCCF3 /* Pods */,
+				62654379E04DA9C0CB06B704 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C30058B51CFFF98200FBC9AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30058B41CFFF98200FBC9AA /* portforwardingios.app */,
+				C30058D01CFFF98200FBC9AA /* portforwardingiosTests.xctest */,
+				C30058DB1CFFF98200FBC9AA /* portforwardingiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30058B61CFFF98200FBC9AA /* portforwardingios */ = {
+			isa = PBXGroup;
+			children = (
+				C32F648F1CFFFF290055D4F3 /* Info.plist */,
+				C30058F41CFFFA8800FBC9AA /* FBPortForwarding */,
+				C30058ED1CFFFA4700FBC9AA /* PFAppDelegate.h */,
+				C30058EE1CFFFA4700FBC9AA /* PFAppDelegate.m */,
+				C32F648D1CFFFF050055D4F3 /* main.m */,
+				C30058C31CFFF98200FBC9AA /* Main.storyboard */,
+				C30058C61CFFF98200FBC9AA /* Assets.xcassets */,
+				C30058C81CFFF98200FBC9AA /* LaunchScreen.storyboard */,
+			);
+			path = portforwardingios;
+			sourceTree = "<group>";
+		};
+		C30058D31CFFF98200FBC9AA /* portforwardingiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				C30058D41CFFF98200FBC9AA /* portforwardingiosTests.m */,
+				C30058D61CFFF98200FBC9AA /* Info.plist */,
+			);
+			path = portforwardingiosTests;
+			sourceTree = "<group>";
+		};
+		C30058DE1CFFF98200FBC9AA /* portforwardingiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C30058DF1CFFF98200FBC9AA /* portforwardingiosUITests.m */,
+				C30058E11CFFF98200FBC9AA /* Info.plist */,
+			);
+			path = portforwardingiosUITests;
+			sourceTree = "<group>";
+		};
+		C30058F41CFFFA8800FBC9AA /* FBPortForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				C30058F71CFFFA8800FBC9AA /* FBPortForwardingCommon.h */,
+				C30058F81CFFFA8800FBC9AA /* FBPortForwardingServer.h */,
+				C30058F91CFFFA8800FBC9AA /* FBPortForwardingServer.m */,
+			);
+			path = FBPortForwarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30058B31CFFF98200FBC9AA /* portforwardingios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30058E41CFFF98200FBC9AA /* Build configuration list for PBXNativeTarget "portforwardingios" */;
+			buildPhases = (
+				9420341AF928B14DCC6C9BEA /* Check Pods Manifest.lock */,
+				C30058B01CFFF98200FBC9AA /* Sources */,
+				C30058B11CFFF98200FBC9AA /* Frameworks */,
+				C30058B21CFFF98200FBC9AA /* Resources */,
+				C386CD4A34BDA924C0665A98 /* Embed Pods Frameworks */,
+				3E6AB800BF0B0D29C5E8DE47 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = portforwardingios;
+			productName = portforwardingios;
+			productReference = C30058B41CFFF98200FBC9AA /* portforwardingios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30058CF1CFFF98200FBC9AA /* portforwardingiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30058E71CFFF98200FBC9AA /* Build configuration list for PBXNativeTarget "portforwardingiosTests" */;
+			buildPhases = (
+				C30058CC1CFFF98200FBC9AA /* Sources */,
+				C30058CD1CFFF98200FBC9AA /* Frameworks */,
+				C30058CE1CFFF98200FBC9AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30058D21CFFF98200FBC9AA /* PBXTargetDependency */,
+			);
+			name = portforwardingiosTests;
+			productName = portforwardingiosTests;
+			productReference = C30058D01CFFF98200FBC9AA /* portforwardingiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C30058DA1CFFF98200FBC9AA /* portforwardingiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30058EA1CFFF98200FBC9AA /* Build configuration list for PBXNativeTarget "portforwardingiosUITests" */;
+			buildPhases = (
+				C30058D71CFFF98200FBC9AA /* Sources */,
+				C30058D81CFFF98200FBC9AA /* Frameworks */,
+				C30058D91CFFF98200FBC9AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30058DD1CFFF98200FBC9AA /* PBXTargetDependency */,
+			);
+			name = portforwardingiosUITests;
+			productName = portforwardingiosUITests;
+			productReference = C30058DB1CFFF98200FBC9AA /* portforwardingiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30058AC1CFFF98200FBC9AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Daniel Guillamot";
+				TargetAttributes = {
+					C30058B31CFFF98200FBC9AA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C30058CF1CFFF98200FBC9AA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C30058B31CFFF98200FBC9AA;
+					};
+					C30058DA1CFFF98200FBC9AA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C30058B31CFFF98200FBC9AA;
+					};
+				};
+			};
+			buildConfigurationList = C30058AF1CFFF98200FBC9AA /* Build configuration list for PBXProject "portforwardingios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30058AB1CFFF98200FBC9AA;
+			productRefGroup = C30058B51CFFF98200FBC9AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30058B31CFFF98200FBC9AA /* portforwardingios */,
+				C30058CF1CFFF98200FBC9AA /* portforwardingiosTests */,
+				C30058DA1CFFF98200FBC9AA /* portforwardingiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30058B21CFFF98200FBC9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F64901CFFFF290055D4F3 /* Info.plist in Resources */,
+				C30058CA1CFFF98200FBC9AA /* LaunchScreen.storyboard in Resources */,
+				C30058C71CFFF98200FBC9AA /* Assets.xcassets in Resources */,
+				C30058C51CFFF98200FBC9AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30058CE1CFFF98200FBC9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30058D91CFFF98200FBC9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E6AB800BF0B0D29C5E8DE47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-portforwardingios/Pods-portforwardingios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9420341AF928B14DCC6C9BEA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C386CD4A34BDA924C0665A98 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-portforwardingios/Pods-portforwardingios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30058B01CFFF98200FBC9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30058EF1CFFFA4700FBC9AA /* PFAppDelegate.m in Sources */,
+				C32F648E1CFFFF050055D4F3 /* main.m in Sources */,
+				C30058FB1CFFFA8800FBC9AA /* FBPortForwardingServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30058CC1CFFF98200FBC9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30058D51CFFF98200FBC9AA /* portforwardingiosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30058D71CFFF98200FBC9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30058E01CFFF98200FBC9AA /* portforwardingiosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30058D21CFFF98200FBC9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30058B31CFFF98200FBC9AA /* portforwardingios */;
+			targetProxy = C30058D11CFFF98200FBC9AA /* PBXContainerItemProxy */;
+		};
+		C30058DD1CFFF98200FBC9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30058B31CFFF98200FBC9AA /* portforwardingios */;
+			targetProxy = C30058DC1CFFF98200FBC9AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C30058C31CFFF98200FBC9AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30058C41CFFF98200FBC9AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C30058C81CFFF98200FBC9AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30058C91CFFF98200FBC9AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C30058E21CFFF98200FBC9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C30058E31CFFF98200FBC9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30058E51CFFF98200FBC9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C392631F14A026C36CCEEC /* Pods-portforwardingios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = portforwardingios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"PeerTalk\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = verbling.portforwardingios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C30058E61CFFF98200FBC9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602D1CFF5E78864AD0A422E4 /* Pods-portforwardingios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = portforwardingios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"PeerTalk\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = verbling.portforwardingios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C30058E81CFFF98200FBC9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = portforwardingiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = verbling.portforwardingiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/portforwardingios.app/portforwardingios";
+			};
+			name = Debug;
+		};
+		C30058E91CFFF98200FBC9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = portforwardingiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = verbling.portforwardingiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/portforwardingios.app/portforwardingios";
+			};
+			name = Release;
+		};
+		C30058EB1CFFF98200FBC9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = portforwardingiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = verbling.portforwardingiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = portforwardingios;
+			};
+			name = Debug;
+		};
+		C30058EC1CFFF98200FBC9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = portforwardingiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = verbling.portforwardingiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = portforwardingios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30058AF1CFFF98200FBC9AA /* Build configuration list for PBXProject "portforwardingios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30058E21CFFF98200FBC9AA /* Debug */,
+				C30058E31CFFF98200FBC9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30058E41CFFF98200FBC9AA /* Build configuration list for PBXNativeTarget "portforwardingios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30058E51CFFF98200FBC9AA /* Debug */,
+				C30058E61CFFF98200FBC9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30058E71CFFF98200FBC9AA /* Build configuration list for PBXNativeTarget "portforwardingiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30058E81CFFF98200FBC9AA /* Debug */,
+				C30058E91CFFF98200FBC9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30058EA1CFFF98200FBC9AA /* Build configuration list for PBXNativeTarget "portforwardingiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30058EB1CFFF98200FBC9AA /* Debug */,
+				C30058EC1CFFF98200FBC9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30058AC1CFFF98200FBC9AA /* Project object */;
+}

@@ -1,0 +1,19 @@
+PODS:
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - PeerTalk (0.0.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - PeerTalk
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  PeerTalk: 5e6843592fea14a4221a9829c43d92a309b7130b
+
+COCOAPODS: 0.39.0
