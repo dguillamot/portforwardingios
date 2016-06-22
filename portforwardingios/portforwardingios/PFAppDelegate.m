@@ -39,7 +39,8 @@
   [self.window makeKeyAndVisible];
 
   _portForwardingServer = [FBPortForwardingServer new];
-  [_portForwardingServer forwardConnectionsFromPort:8082];
+  // [_portForwardingServer forwardConnectionsFromPort:8081 shouldReportError:YES];
+  [_portForwardingServer forwardConnectionsFromPort:8081];
   [_portForwardingServer listenForMultiplexingChannelOnPort:8025];
 
   return YES;
@@ -47,7 +48,7 @@
 
 - (void)sendRequest
 {
-  NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://localhost:8082/404"]];
+  NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios&dev=true"]];
   [[[NSURLConnection alloc] initWithRequest:req delegate:self] start];
 }
 

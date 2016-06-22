@@ -15,6 +15,7 @@
 
 - (void)listenForMultiplexingChannelOnPort:(NSUInteger)port;
 - (void)forwardConnectionsFromPort:(NSUInteger)port;
+// - (void)forwardConnectionsFromPort:(NSUInteger)port shouldReportError:(BOOL)shouldReportError;
 - (void)close;
 
 @end

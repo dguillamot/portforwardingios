@@ -74,13 +74,20 @@
 - (void)listenForMultiplexingChannelOnPort:(NSUInteger)port
 {
   [self _listenForMultiplexingChannelOnPort:port reportError:YES];
+    /*
   [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
-    [self _listenForMultiplexingChannelOnPort:port reportError:NO];
-  }];
+    [self _listenForMultiplexingChannelOnPort:port reportError:YES];
+  }];*/
 }
 
 - (void)_listenForMultiplexingChannelOnPort:(NSUInteger)port reportError:(BOOL)shouldReportError
 {
+  if (shouldReportError) {
+    NSLog(@"DGDG SHOULD REPORT ERROR YES");
+  } else {
+    NSLog(@"DGDG SHOULD REPORT ERROR NO");
+  }
+    
   PTChannel *channel = [[PTChannel alloc] initWithProtocol:_protocol delegate:self];
   [channel listenOnPort:port IPv4Address:INADDR_LOOPBACK callback:^(NSError *error) {
     if (error) {
